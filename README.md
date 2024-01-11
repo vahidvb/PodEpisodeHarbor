@@ -34,7 +34,7 @@ A simple web application built with Vue.js to showcase and manage podcast episod
 2. Navigate to the project directory:
 
    ```bash
-   cd podcast-site
+   cd PodEpisodeHarbor
 3. Install dependencies:
 
    ```bash
