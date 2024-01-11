@@ -30,7 +30,7 @@ A simple web application built with Vue.js to showcase and manage podcast episod
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/vahidvb/pod-episode-harbor.git
+   git clone https://github.com/vahidvb/PodEpisodeHarbor.git
 2. Navigate to the project directory:
 
    ```bash
