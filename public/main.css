@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    margin: 0;
+    direction: ltr;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+}
+
+.main {
+    margin: auto;
+    width: 480px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 60px 80px rgba(0, 0, 0, 0.60), 0 45px 26px rgba(0, 0, 0, 0.14);
+}
+
+.podcast-description {
+    text-align: justify;
+    margin: 0;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.podcast-title {
+    text-align: left;
+    margin: 0;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.episode {
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.episode:last-child {
+    margin-bottom: 0;
+}
+.episode .number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: rgb(0 0 0 / 34%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.episode .image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+
+}
+
+.episode .length {
+    position: absolute;
+    top: 170px;
+    left: 5px;
+    background: rgb(0 0 0 / 34%);
+    padding: 0 5px 0 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    place-items: center;
+    font-family: sans-serif;
+    height: 25px;
+}
+
+.episode .length .length-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    fill: white;
+}
+
+.left-holder {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.episode .image-holder {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.episode .left-holder .title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    height: 40px;
+}
+
+.episode .left-holder .description {
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+    height: 130px;
+    overflow-x: auto;
+    padding-right: 8px;
+}
+
+.episode .left-holder .description::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(128, 128, 128);
+    border-radius: 10px;
+    background-color: #f5f5f540
+}
+
+.episode .left-holder .description::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent
+}
+
+.episode .left-holder .description::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(143, 143, 143);
+    background-color: rgb(150, 150, 150)
+}
+
+.episode .links {
+    height: 30px;
+}
+
+.episode .links .app-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
