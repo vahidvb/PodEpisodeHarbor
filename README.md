@@ -1,5 +1,5 @@
 # Pod Episode Harbor
-
+[![J7bAMlV.th.png](https://iili.io/J7bAMlV.th.png)](https://freeimage.host/i/J7bAMlV)
 ## Podcast Website with Vue.js
 
 A simple web application built with Vue.js to showcase and manage podcast episodes. The application allows users to view episode details, listen to episodes on CastBox and Spotify, and provides an easy-to-update JSON file to manage episode data.
