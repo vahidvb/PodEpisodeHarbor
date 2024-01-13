@@ -12,16 +12,23 @@ body {
     line-height: 1.5;
     color: #212529;
     background-color: #fff;
+    background-image: linear-gradient(80deg, #278d42, #e0d3ef);
 }
 
 .main {
     margin: auto;
     width: 480px;
+    max-width: calc(100% - 65px);
     border-radius: 10px;
     padding: 15px;
     margin-top: 15px;
     margin-bottom: 15px;
     box-shadow: 0 60px 80px rgba(0, 0, 0, 0.60), 0 45px 26px rgba(0, 0, 0, 0.14);
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.1));
+    z-index: 3;
+    backdrop-filter: blur(1rem);
 }
 
 .podcast-description {
@@ -46,9 +53,11 @@ body {
     padding: 5px;
     border-radius: 10px;
 }
+
 .episode:last-child {
     margin-bottom: 0;
 }
+
 .episode .number {
     position: absolute;
     top: 5px;
@@ -69,7 +78,6 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 10px;
-
 }
 
 .episode .length {
@@ -149,4 +157,143 @@ body {
     width: 30px;
     height: 30px;
     margin-left: 5px;
+}
+
+.top {
+    position: absolute;
+    max-height: 80rem;
+    max-width: 80rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, #e0d3ef, var(--main-color));
+    filter: blur(40px);
+    animation: bottom 30s infinite;
+}
+
+@keyframes bottom {
+
+    0%,
+    100% {
+        top: -10rem;
+    }
+
+    80% {
+        top: 50rem;
+    }
+}
+
+.bottom {
+    position: absolute;
+    max-height: 50rem;
+    max-width: 50rem;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, var(--main-color), #ebe9ee);
+    filter: blur(2rem);
+    animation: top 30s infinite;
+}
+
+@keyframes top {
+
+    0%,
+    100% {
+        bottom: -10rem;
+    }
+
+    80% {
+        bottom: 50rem;
+    }
+}
+
+.left {
+    position: absolute;
+    max-height: 50rem;
+    max-width: 50rem;
+    height: 80%;
+    width: 100%;
+    left: 0;
+    border-radius: 50%;
+    background-image: linear-gradient(80deg, #ebe9ee, #2286a4);
+    filter: blur(6rem);
+    animation: left 30s infinite;
+}
+
+@keyframes left {
+
+    0%,
+    100% {
+        left: -10rem;
+    }
+
+    80% {
+        left: 80rem;
+    }
+}
+
+.right {
+    position: absolute;
+    max-height: 50rem;
+    max-width: 50rem;
+    height: 100%;
+    width: 80%;
+    right: 0;
+    border-radius: 50%;
+    background: linear-gradient(0deg, #ffffff3b, #ffffff69);
+    filter: blur(30px);
+    animation: right 30s infinite;
+}
+
+@keyframes right {
+
+    0%,
+    100% {
+        right: -10rem;
+    }
+
+    80% {
+        right: 80rem;
+    }
+}
+
+.bg-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* bottom: 0; */
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.container {
+    height: 70vh;
+    width: clamp(25rem, 32rem, 25%);
+    height: clamp(50rem, 70vh, 55rem);
+    position: absolute;
+    z-index: 2;
+}
+
+.glass {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0.1));
+    z-index: 3;
+    backdrop-filter: blur(1rem);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-bottom-left-radius: 20rem;
+    border-bottom-right-radius: 20rem;
+    box-shadow: 0 1.5rem 0 rgba(255, 255, 255, 0.61),
+        inset 0 -1.5rem rgba(238, 238, 238, 0.692), 0 4.5rem 0 rgba(0, 0, 0, 0.05);
 }
